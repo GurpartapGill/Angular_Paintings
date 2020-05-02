@@ -1,0 +1,47 @@
+<section id="navigation">
+
+  <ul id="myList" 
+        [ngStyle]="{textAlign: 'left', fontSize: '1.5em'}">
+
+          <li *ngFor="let cls of myArt; let i =index"
+          id="s{{i}}">
+          <button (click)="onClickMe(i)" class="btn">{{cls.pname}}</button>
+        
+      </li>
+    </ul>
+  
+</section>
+
+<section>
+
+  <ul id="myList2" 
+  [ngStyle]="{textAlign: 'left', fontSize: '1.5em'}">
+
+    <li *ngFor="let cls of myArt; let i =index"
+    id="s{{i}}">
+
+      <div id="d{{i}}" style="display: none; margin-top: -20px; margin-bottom: 10px;">
+
+        <img src ={{cls.pic}} style="float: left; clear: both"  height= "200px" width= "200px">
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <strong>Name:</strong>{{cls.pname}}
+        <br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <strong>Artist: </strong>{{cls.artist}}
+        <br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <strong>Type:</strong>{{cls.ptype}}<br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <strong>Year: </strong>{{cls.pyear}}
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button (click)="citations()" class="cite">Citaions</button>
+      </div>  
+
+    </li>
+
+  </ul>
+
+  <!--<button (click)="citations()" class="cite">Citaions</button>-->
+
+</section>

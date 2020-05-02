@@ -1,0 +1,46 @@
+/* You can add global styles to this file, and also import other style files */
+
+h1
+{
+  color: navy;
+  text-align: center;
+  margin-top: 1px;
+  margin-bottom: -10px;
+}
+
+h3
+{
+  color: crimson;
+  text-align: center;
+  margin-top: -60px;
+}
+
+
+li
+{
+  list-style: none;
+  display: inline;
+  padding: 2px 2px 2px 5px;
+}
+
+img
+{
+  height: "100px";
+  width: "30px";
+}
+
+.btn
+{
+  background-color: #23b83c;
+  border: 1px solid #020353;
+  border-radius:2px;
+  color: whitesmoke;
+  display: inline-block;
+  font-size: 0.60em;
+  height: 35px;
+}
+
+.btn:focus
+{
+  background-color: #b82350;
+}
